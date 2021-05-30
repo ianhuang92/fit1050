@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--
+Template Name: Nocobot
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>FunSurf Club</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded" style="background-image:url('images/demo/backgrounds/image1.jpeg"> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo" class="fl_left"> 
+        <!-- ################################################################################################ -->
+        <h1><a href="index.html">FunSurf</a></h1>
+        <!-- ################################################################################################ -->
+      </div>
+      <nav id="mainav" class="fl_right"> 
+        <!-- ################################################################################################ -->
+        <ul class="clear">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Surf Tour</a></li>
+          <li><a href="#">Surf lesson</a></li>
+          <li><a href="#">Activity</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Login/Register</a></li>
+        </ul>
+        <!-- ################################################################################################ -->
+      </nav>
+    </header>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="overlay">
+    <div id="pageintro" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <article>
+        <h3 class="heading">Enjoy Surfing in FunSurf</h3>
+        <p>Welcome to FunSurf Club.</p>
+        <p>Join our fun activities and find your friends here.</p>
+        <!-- <footer><a class="btn" href="#">Gravida sem neque</a></footer> -->
+      </article>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <section id="introblocks">
+      <ul class="nospace group btmspace-80">
+        <li class="one_third first">
+          <figure><img src="images/demo/image4.jpeg" alt="">
+            <figcaption>
+              <h6 class="heading">Surfing</h6>
+              <div>
+                <p>Surfer uses a board to ride on the forward section, or face, of a moving wave of water.</p>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="one_third">
+          <figure><img src="images/demo/image3.jpeg" alt="">
+            <figcaption>
+              <h6 class="heading">Wake Surfing</h6>
+              <div>
+                <p>Wake surfer trails behind a boat, riding the boat's wake.</p>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="one_third">
+          <figure><img src="images/demo/image2.jpeg" alt="">
+            <figcaption>
+              <h6 class="heading">Kite Surfing</h6>
+              <div>
+                <p>Kite surfer uses the wind power with a large power kite to be pulled on a water surface.</p>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+    <!-- ################################################################################################ -->
+    <hr class="btmspace-80">
+    <!-- ################################################################################################ -->
+    <section class="group">
+      <div class="one_half first">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gaTB67FWIsg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="one_half">
+            <article>
+              <h6 class="heading"><a href="#">About Us</a></h6>
+              <br />
+              <br />
+              <p class="nospace">Here is a surf club on the Gold Coast with a lot of surfers. 
+                We regularly organize surfing activities including surfing experience tour, surfing lessons, various events and competitions, etc. 
+                We have different types of surfing groups, such as surfing, wake surfing and kite surfing. 
+                Join us, meet friends, and learn the latest surfing news&hellip;</p>
+            </article>
+      </div>
+    </section>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/image5.webp');"，class="wrapper row3">
+    <section class="hoc container clear"> 
+      <!-- ################################################################################################ -->
+      <div class="sectiontitle">
+        <p class="nospace font-xs">FunSurf</p>
+        <p class="heading underline font-x2">Recent activities</p>
+        <br/>
+        <br/>
+        <p>Time remaining before the next activity:</p>
+        <!-- Display the countdown timer in an element -->
+        <li id="demo"></li>
+        <script>
+          // Set the date we're counting down to
+          var countDownDate = new Date("Jun 5, 2021 11:00:00").getTime();
+          var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+          }, 1000);
+        </script>
+      </div>
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+      <ul id="latest" class="nospace group">
+        <li class="one_third first">
+          <article><img src="images/demo/BBQ Activity.jpeg" alt="">
+            <ul class="nospace meta clear">
+              <li><i class="fas fa-comments"></i> <a href="#">Comments (15)</a></li>
+            </ul>
+            <div class="excerpt clear">
+              <h6 class="heading">BBQ party for club members</h6>
+              <br/>
+              <time datetime="2021-06-05T08:15+00:00"><strong>05</strong> <em>Jun</em></time>
+              <p>We are going to hold a BBQ party at the seaside. All club members can attend for free. The supplies are provided by the club. During the party, members are free to organize surfing activities&hellip;</p>
+            </div>
+            <footer><a class="btn" href="#">Read More</a></footer>
+          </article>
+        </li>
+
+        <li class="one_third">
+          <article><img src="images/demo/first experience.jpeg" alt="">
+            <ul class="nospace meta clear">
+              <li><i class="fas fa-comments"></i> <a href="#">Comments (12)</a></li>
+            </ul>
+            <div class="excerpt clear">
+              <h6 class="heading">Free surfing experience for beginners</h6>
+              <time datetime="2021-06-06T08:15+00:00"><strong>06</strong> <em>Jun</em></time>
+              <p>We will hold a surfing experience activity for those who are interested in surfing. This is for free, our professional instructors will guide the beginners to surf. After the activity, people can choose to join our club&hellip;</p>
+            </div>
+            <footer><a class="btn" href="#">Read More</a></footer>
+          </article>
+        </li>
+
+        <li class="one_third">
+          <article><img src="images/demo/lesson activity.jpeg" alt="">
+            <ul class="nospace meta clear">
+              <li><i class="fas fa-comments"></i> <a href="#">Comments (8)</a></li>
+            </ul>
+            <div class="excerpt clear">
+              <h6 class="heading">Two to four members teaching courses</h6>
+              <time datetime="2021-06-10T08:15+00:00"><strong>10</strong> <em>Jun</em></time>
+              <p>A new session of surfing lessons is about to begin. All surfing lessons will be offered like surfing, wakesurfing and kitesurfing. The deadline for registration is three days before the lesson begins&hellip;</p>
+            </div>
+            <footer><a class="btn" href="#">Read More</a></footer>
+          </article>
+        </li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </section>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+  <div class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <p class="nospace font-xs">FunSurf</p>
+      <p class="heading underline font-x2">What would you like to do?</p>
+    </div>
+    <ul class="nospace group team">
+      <li class="one_third first">
+        <figure><img src="images/demo/surf tour.jpeg" alt="">
+          <figcaption><strong>BOOK A SURF TOUR</strong> <em>On the Gold Coast</em></figcaption>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><img src="images/demo/surf lesson.jpeg" alt="">
+          <figcaption><strong>LEARN TO SURF</strong> <em>With Expert Guides</em></figcaption>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><img src="images/demo/join us.jpeg" alt="">
+          <figcaption><strong>JOIN US</strong> <em>Join fun activities</em></figcaption>
+        </figure>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- <div class="wrapper row3">
+  <figure class="hoc container clear clients"> 
+    <figcaption class="sectiontitle">
+      <p class="nospace font-xs">Fun Surf</p>
+      <p class="heading underline font-x2">Our past activities</p>
+    </figcaption>
+    <ul class="nospace group">
+      <li class="one_quarter first"><a class="imgover" href="#"><img src="images/demo/249x100.png" alt=""></a></li>
+      <li class="one_quarter"><a class="imgover" href="#"><img src="images/demo/249x100.png" alt=""></a></li>
+      <li class="one_quarter"><a class="imgover" href="#"><img src="images/demo/249x100.png" alt=""></a></li>
+      <li class="one_quarter"><a class="imgover" href="#"><img src="images/demo/249x100.png" alt=""></a></li>
+      <li class="one_quarter first"><a class="imgover" href="#"><img src="images/demo/249x100.png" alt=""></a></li>
+      <li class="one_quarter"><a class="imgover" href="#"><img src="images/demo/249x100.png" alt=""></a></li>
+      <li class="one_quarter"><a class="imgover" href="#"><img src="images/demo/249x100.png" alt=""></a></li>
+      <li class="one_quarter"><a class="imgover" href="#"><img src="images/demo/249x100.png" alt=""></a></li>
+    </ul>
+  </figure>
+</div> -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="bgded overlay row4" style="background-image:url('images/demo/backgrounds/Footer.jpeg');">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_third first">
+      <h6 class="heading">Quick links</h6>
+      <ul class="nospace linklist">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Learn About Surfing</a></li>
+        <li><a href="#">How to Meet New Friends</a></li>
+        <li><a href="#">More Activities</a></li>
+        <li><a href="#">Join Us</a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Contact Us</h6>
+      <p class="nospace btmspace-15">Fill in your questions, we will send you back within three working days.</p>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+          <input class="btmspace-15" type="text" value="" placeholder="Question">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">FunSurf More</h6>
+      <ul class="nospace linklist">
+        <li>Tel: (+61) 401 182 737</li>
+        <li>Email: funsurf@gmail.com</li>
+        <li>Address: FunSurf Club, Surfers Paradise QLD 4217</li>
+        <li>Tuesday - Sunday: 10.00am - 16.00pm</li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">FunSurf Club Queensland</p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
